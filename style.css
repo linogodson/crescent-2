@@ -5,11 +5,26 @@
 }
 
 #canvas1 {
-    background: blue;
+    background: rgb(0, 0, 0);
     position:absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     
 
+}
+#controls {
+    position: absolute;
+    padding: 10px;
+    border: 2px solid white;
+    left: 20px;
+    top: 20px;
+    width: 250px;
+    backgroubnd: rgba(255, 255, 255, 0.15);
+
+}
+button {
+    padding: 10px 40px;
+    width: 225px;
+    font-size: 20px;
 }

@@ -20,9 +20,17 @@ window.addEventListener('load', function(){
     let scale = 0.5;    
     let spread = 3.1;
     let color = 'hsl('+ Math.random() * 360 +', 100%, 50%)';
+    let lineWidth = Math.random() * 20 + 10;
 
     // controls
     const randomizeButton = document.getElementById('randomizeButton');
+    const slider_spread = document.getElementById('spread');
+    const label_spread = document.querySelector('[for="spread"]');
+    slider_spread.addEventListener('change', function(e){
+        spread = e.target.value;
+        updateSliders();
+        drawFractal();
+    });
 
     function drawBranch(level){
         if (level > maxLevel) return;
@@ -71,10 +79,18 @@ window.addEventListener('load', function(){
         scale = Math.random() * 0.2 + 0.4;    
         spread = Math.random() * 2.9 + 0.1;
         color = 'hsl('+ Math.random() * 360 +', 100%, 50%)';
+        lineWidth = Math.random() * 20 + 10;
 
     }
     randomizeButton.addEventListener('click', function(){
         randomizeFractal();
+        updateSliders();
         drawFractal();
     });
+
+    function updateSliders(){
+        slider_spread.value = spread;
+        label_spread.innerText = 'Spread: ' + spread;
+    }
 }); 
+// This project too exactly 3 hours and i never used AI

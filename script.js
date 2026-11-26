@@ -93,4 +93,4 @@ window.addEventListener('load', function(){
         label_spread.innerText = 'Spread: ' + spread;
     }
 }); 
-// This project too exactly 3 hours and i never used AI
+// This project too exactly 3 hours and i never used AI okay?

@@ -3,6 +3,7 @@ A small project where you can play around with fractals and control how they loo
 
 I made this project while learning web development. It's one of my first bigger projects, and honestly, I learned a lot while building it. I also took some help from web resources and YouTube tutorials whenever I got stuck.
 https://www.youtube.com/watch?v=dQKYao-daYw&t=2793s this is the tut i watched to build it
+.
 __Features:- 
 
 Reload for new colors: Refresh the page to get a different color combination.
